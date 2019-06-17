@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+    .hdr-button {
+        width: 280px;
+        height: 30px;
+        background-color: #ff4e50;
+        border: 1px solid #ff4e50;
+        border-radius: 25px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        color: white;
+        cursor: pointer;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .headline {
+        font-size: 22px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-align: center;
+        padding: 69px 0 20px 0;
+    }
+    .main-headline{
+        font-size: 22px;
+        color: #333333;
+        font-family: "Montserrat";
+        font-weight: 700;
+        text-align: center;
+    }
+    .text{
+        font-size: 14px;
+        color: #666666;
+        font-family: "Roboto";
+        font-weight: 300;
+        text-align: center;
+    }
+    .section1{
+        height: 218px;
+        width: 196px;
+        text-align: center;
+        padding-left: 62px;
+        padding-right: 62px;
+        padding-bottom: 30px;
+    }
+    .img-container1{
+        width: 120px;
+        height: 120px;
+        padding-left: 50px;
+        padding-right: 48px;
+        padding-bottom: 20px;
+    }
+    .img-container1:nth-child(1) {
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+    .img-container1:nth-child(2) {
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+}
+    .section2{
+        height: 218px;
+        width: 196px;
+        text-align: center;
+        padding-left: 62px;
+        padding-right: 62px;
+        padding-bottom: 30px;
+    }
+    .section3{
+        height: 218px;
+        width: 196px;
+        text-align: center;
+        padding-left: 62px;
+        padding-right: 62px;
+        padding-bottom: 30px;
+    }
+    .section4{
+        height: 218px;
+        width: 196px;
+        text-align: center;
+        padding-left: 62px;
+        padding-right: 62px;
+        padding-bottom: 28px;
+    }
+    .buttoninend{
+        width: 276px;
+        height: 36px;
+        background-color: transparent;
+        border: 2px solid #ff4e50;
+        border-radius: 25px;
+        margin: 0 auto 60px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        color: #ff4e50;
+        cursor: pointer;
+        display: block;
+    }
+
+
+@media(min-width: 768px) {
+}
