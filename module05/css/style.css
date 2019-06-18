@@ -98,7 +98,7 @@
     height: 104px;
     width: 104px;
     background-color: #53a08d;
-    background-image: url("../img/m-left.png");
+    background-image: url("../img/background-image/m-left.png");
     background-repeat: no-repeat;
     background-position: center;
     left: -185px;
@@ -107,14 +107,14 @@
     border-radius: 1px; 
 }
 
-.shop-description::after {
+.shop-description::after{
     content: "";
     display: block;
     position: absolute;
     height: 104px;
     width: 104px;
     background-color: #1abc9c;
-    background-image: url("../img/m-right.png");
+    background-image: url("../img/background-image/m-right.png");
     background-repeat: no-repeat;
     background-position: center;
     right: -185px;
