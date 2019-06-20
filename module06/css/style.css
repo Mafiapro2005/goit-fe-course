@@ -10,16 +10,13 @@
     width: 1200px;
     margin: 0 auto;
 }
-
-
-.logo {
+.title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 35px;
     color: #95e1d3;
     margin-left: -3px;
 }
-
 .page-nav {
     display: flex;
     justify-content: space-between;
@@ -27,17 +24,14 @@
     padding: 29px 0 130px 0;
     font-size: 0;
 }
-
 .site-navigation {
     list-style: none;
 }
-
 .item {
     display: inline-block;
     padding-top: 12px;
     margin-right: 57px;
 }
-
 .item-link {
     font-size: 14px;
     text-transform: uppercase;
@@ -46,98 +40,34 @@
     color: #95e1d3;
     text-decoration: none;
 }
-
 .item:last-child {
     margin-right: 0;
 }
-
-
-.text-1 {
+.text {
     width: 50px;
     height: 3px;
     margin: 12px auto 0;
     background-color: #f38181;
     opacity: 0;
 }
-
-.text-2 {
-    width: 61px;
-    height: 3px;
-    margin: 12px auto 0;
-    background-color: #f38181;
-    opacity: 0;
-}
-
-.text-3 {
-    width: 46px;
-    height: 3px;
-    margin: 12px auto 0;
-    background-color: #f38181;
-    opacity: 0;
-}
-
-.text-4 {
-    width: 41px;
-    height: 3px;
-    margin: 12px auto 0;
-    background-color: #f38181;
-    opacity: 0;
-}
-
-.text-5 {
-    width: 67px;
-    height: 3px;
-    margin: 12px auto 0;
-    background-color: #f38181;
-    opacity: 0;
-}
-
-
-.item-link:hover {
+.link:hover {
     transition-property: color;
     transition-duration: 300ms;
     transition-timing-function: linear;
     color: #f6a6a6;
 }
-
-
 .item-link:hover .text-1 {
     transition-duration: 300ms;
     transition-timing-function: linear;
     opacity: 1;
 }
-
-.item-link:hover .text-2 {
-    transition-duration: 300ms;
-    transition-timing-function: linear;
-    opacity: 1;
-}
-
-.item-link:hover .text-3 {
-    transition-duration: 300ms;
-    transition-timing-function: linear;
-    opacity: 1;
-}
-
-.item-link:hover .text-4 {
-    transition-duration: 300ms;
-    transition-timing-function: linear;
-    opacity: 1;
-}
-
-.item-link:hover .text-5 {
-    transition-duration: 300ms;
-    transition-timing-function: linear;
-    opacity: 1;
-}
-
-.serv {
+.main-headline {
     text-align: center;
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
 }
 
-.nazvanie {
+.main-subheadline {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     text-transform: uppercase;
@@ -145,8 +75,7 @@
     text-align: center;
     padding: 22px 0 110px 0;
 }
-
-.nazvanie::after {
+.main-subheadline::after {
     content:"";
     display: block;
     width: 60px;
@@ -155,25 +84,24 @@
     margin: 0 auto;
     margin-top: 20px;
 }
-
-.site-content {
+.content {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.item-content {
+.content-item {
     width: 330px;
     margin-bottom: 102px;
 }
 
 
-.item-content:nth-child(n+4) {
+.content-item:nth-child(n+4) {
     margin-bottom: 92px;
 }
 
-.main-1 {
+.main-item-1 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -182,7 +110,7 @@
     color: black;
 }
 
-.main-2 {
+.main-item-2 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -191,7 +119,7 @@
     color: black;  
 }
 
-.main-3 {
+.main-item-3 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -200,7 +128,7 @@
     color: black;
 }
 
-.main-4 {
+.main-item-4 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -209,7 +137,7 @@
     color: black;
 }
 
-.main-5 {
+.main-item-5 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -218,7 +146,7 @@
     color: black;
 }
 
-.main-6 {
+.main-item-6 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -238,7 +166,7 @@
     height: 40px;
 }
 
-.p-1-2 {
+.sub-p-1 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -260,7 +188,7 @@
     height: 40px;
 }
 
-.p-2-2 {
+.sub-p-2 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -282,7 +210,7 @@
     height: 40px;
 }
 
-.p-3-2 {
+.sub-p-3 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -304,7 +232,7 @@
     height: 40px;
 }
 
-.p-4-2 {
+.sub-p-4 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -326,7 +254,7 @@
     height: 40px;
 }
 
-.p-5-2 {
+.sub-p-5 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -348,7 +276,7 @@
     height: 40px;
 }
 
-.p-6-2 {
+.sub-p-6 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -359,13 +287,13 @@
     height: 40px;
 }
 
-.footer-serv {
+.Photo-zone-headline {
     text-align: center;
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
 }
 
-.footer-nazvanie {
+.Photo-zone-subheadline {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     text-transform: uppercase;
@@ -374,7 +302,7 @@
     padding: 22px 0 90px 0;
 }
 
-.footer-nazvanie::after {
+.Photo-zone-subheadline::after {
     content:"";
     display: block;
     width: 60px;
@@ -384,7 +312,7 @@
     margin-top: 20px;
 }
 
-.nef {
+.Photo-zone-text {
     text-align: center;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
@@ -440,7 +368,7 @@
     margin-right: -2px;
 }
 
-.f-img-1 {
+.Glass-img-1 {
     width: 55px;
     height: 56px;
     padding: 15px 20px 15px 23px;
@@ -448,7 +376,7 @@
     cursor: pointer;
 }
 
-.f-img-2 {
+.Glass-img-2 {
     width: 55px;
     height: 56px;
     padding: 17px 11px 17px 12px;
@@ -456,7 +384,7 @@
     cursor: pointer;
 }
 
-.f-img-3 {
+.Glass-img-3 {
     width: 55px;
     height: 56px;
     padding: 15px 17px 15px 18px;
@@ -464,7 +392,69 @@
     cursor: pointer;
 }
 
-.f-img-4 {
+.Glass-img-4 {
+    width: 55px;
+    height: 56px;
+    padding: 15px 16px 15px 14px;
+    background-color: #fce38a;  
+    cursor: pointer;
+}
+.Photo-img-1 {
+    width: 55px;
+    height: 56px;
+    padding: 15px 20px 15px 23px;
+    background-color: #fce38a;
+    cursor: pointer;
+}
+
+.Photo-img-2 {
+    width: 55px;
+    height: 56px;
+    padding: 17px 11px 17px 12px;
+    background-color: #fce38a;
+    cursor: pointer;
+}
+
+.Photo-img-3 {
+    width: 55px;
+    height: 56px;
+    padding: 15px 17px 15px 18px;
+    background-color: #fce38a;
+    cursor: pointer;
+}
+
+.Photo-img-4 {
+    width: 55px;
+    height: 56px;
+    padding: 15px 16px 15px 14px;
+    background-color: #fce38a;  
+    cursor: pointer;
+}
+.Check-img-1 {
+    width: 55px;
+    height: 56px;
+    padding: 15px 20px 15px 23px;
+    background-color: #fce38a;
+    cursor: pointer;
+}
+
+.Check-img-2 {
+    width: 55px;
+    height: 56px;
+    padding: 17px 11px 17px 12px;
+    background-color: #fce38a;
+    cursor: pointer;
+}
+
+.Check-img-3 {
+    width: 55px;
+    height: 56px;
+    padding: 15px 17px 15px 18px;
+    background-color: #fce38a;
+    cursor: pointer;
+}
+
+.Check-img-4 {
     width: 55px;
     height: 56px;
     padding: 15px 16px 15px 14px;
@@ -472,27 +462,51 @@
     cursor: pointer;
 }
 
-.f-men {
-    margin-bottom: -4px;
-}
-
-.f-img-1:hover {
+.Glass-img-1:hover {
     background-color: #95e1d3;
 }
 
-.f-img-2:hover {
+.Glass-img-2:hover {
     background-color: #95e1d3;
 }
 
-.f-img-3:hover {
+.Glass-img-3:hover {
     background-color: #95e1d3;
 }
 
-.f-img-4:hover {
+.Glass-img-4:hover {
+    background-color: #95e1d3;
+}
+.Photo-img-1:hover {
     background-color: #95e1d3;
 }
 
+.Photo-img-2:hover {
+    background-color: #95e1d3;
+}
 
+.Photo-img-3:hover {
+    background-color: #95e1d3;
+}
+
+.Photo-img-4:hover {
+    background-color: #95e1d3;
+}
+.Check-img-1:hover {
+    background-color: #95e1d3;
+}
+
+.Check-img-2:hover {
+    background-color: #95e1d3;
+}
+
+.Check-img-3:hover {
+    background-color: #95e1d3;
+}
+
+.Check-img-4:hover {
+    background-color: #95e1d3;
+}
 .name {
     padding-top: 30px;
     font-family: 'Montserrat', sans-serif;
@@ -501,7 +515,7 @@
     text-align: center;
 }
 
-.skills {
+.position {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     text-align: center;
@@ -515,7 +529,7 @@
     position: relative;
 }
 
-.footer-text {
+.foot-text {
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -523,7 +537,7 @@
     padding: 25px 0 25px 0;
 }
 
-.laaqiq {
+.special-text-item {
     display: inline-block;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;

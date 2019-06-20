@@ -1,11 +1,81 @@
-﻿@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400&display=swap');
+﻿
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400&display=swap');
 
 * {
     margin: 0;
     padding: 0;
 }
 
-    .hdr-button {
+@media all and (min-width: 320px) {
+    .page__header {
+        background: url(../img/background-image/Header=img=mobile.png)rgba(0, 0, 0, 0.5) no-repeat;
+        background-size: cover;
+        height: 542px;
+    }
+
+    .container__for__link {
+        padding: 32px 0 165px 0;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+    
+
+    .header__link1 {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        margin-left: 80px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+
+    .header__link2 {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        padding: 10px 17px 8px 16px;
+        margin-left: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        border: 3px solid white;
+        border-radius: 25px;
+    }
+
+    .colorer {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .header__logo {
+        font-size: 20px;
+        text-decoration: none;
+        display: block;
+        margin: 0 auto 39px;
+    }
+
+    .header__zagolovok {
+        font-size: 30px;
+        padding-bottom: 20px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .header__text {
+        width: 217px;
+        margin: 0 auto 19px;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        color: white;
+    }
+
+    .button {
         width: 280px;
         height: 30px;
         background-color: #ff4e50;
@@ -24,78 +94,110 @@
         padding-top: 10px;
     }
 
-    .headline {
+
+    .main__zagolovok {
         font-size: 22px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         text-align: center;
         padding: 69px 0 20px 0;
     }
-    .main-headline{
-        font-size: 22px;
-        color: #333333;
-        font-family: "Montserrat";
-        font-weight: 700;
-        text-align: center;
-    }
-    .text{
-        font-size: 14px;
-        color: #666666;
-        font-family: "Roboto";
-        font-weight: 300;
-        text-align: center;
-    }
-    .section1{
-        height: 218px;
-        width: 196px;
-        text-align: center;
-        padding-left: 62px;
-        padding-right: 62px;
-        padding-bottom: 30px;
-    }
-    .img-container1{
-        width: 120px;
-        height: 120px;
-        padding-left: 50px;
-        padding-right: 48px;
-        padding-bottom: 20px;
-    }
-    .img-container1:nth-child(1) {
-    top: 50px;
-    left: 50px;
-    z-index: 2;
-}
 
-    .img-container1:nth-child(2) {
-    top: 100px;
-    left: 100px;
-    z-index: 1;
-}
-    .section2{
-        height: 218px;
-        width: 196px;
+
+
+    .section__karman {
+        margin-left: 60px;
+        width: 200px;
+        position: relative;
+    }
+
+    .div__img {
+        margin: 0 auto;
+        display: block;
+        border-radius: 50%;
+    }
+
+    .section__paket1 {
+        width: 35px;
+        height: 35px;
+        background-color: #ff4e50;
+        border: 3px solid white;
+        border-radius: 50%;
+        position: absolute;
+        top: 75px;
+        left: 110px;
+    }
+
+    .section__paket2 {
+        width: 35px;
+        height: 35px;
+        background-color: #ffa507;
+        border: 3px solid white;
+        border-radius: 50%;
+        position: absolute;
+        top: 75px;
+        left: 110px;
+    }
+
+    .section__paket3 {
+        width: 35px;
+        height: 35px;
+        background-color: #1cd7ad;
+        border: 3px solid white;
+        border-radius: 50%;
+        position: absolute;
+        top: 75px;
+        left: 110px;
+    }
+
+    .section__paket4 {
+        width: 35px;
+        height: 35px;
+        background-color: #4e73db;
+        border: 3px solid white;
+        border-radius: 50%;
+        position: absolute;
+        top: 75px;
+        left: 110px;
+    }
+
+
+    .a__img1 {
+        padding: 6px 0 0 8px;
+    }
+
+    .a__img2 {
+        padding: 8px 0 0 11px;
+    }
+
+    .a__img3 {
+        padding: 7px 0 0 8px;
+    }
+
+    .a__img4 {
+        padding: 8px 0 0 8px;
+    }
+
+
+    .img__h {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
         text-align: center;
-        padding-left: 62px;
-        padding-right: 62px;
+        padding: 20px 0 15px 0;
+    }
+
+    .h__text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        text-align: center;
+        color: gray;
         padding-bottom: 30px;
     }
-    .section3{
-        height: 218px;
-        width: 196px;
-        text-align: center;
-        padding-left: 62px;
-        padding-right: 62px;
-        padding-bottom: 30px;
-    }
-    .section4{
-        height: 218px;
-        width: 196px;
-        text-align: center;
-        padding-left: 62px;
-        padding-right: 62px;
-        padding-bottom: 28px;
-    }
-    .buttoninend{
+
+
+    .buttoner {
         width: 276px;
         height: 36px;
         background-color: transparent;
@@ -109,7 +211,194 @@
         cursor: pointer;
         display: block;
     }
+}
+
+@media all and (min-width: 768px) {
 
 
-@media(min-width: 768px) {
+    .container {
+        width: 748px;
+    }
+
+    .page__header {
+        background: url(../img/mobile.png)rgba(0, 0, 0, 0.5);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 700px;
+        position: relative;
+    }
+
+
+    .header__link1 {
+        position: absolute;
+        top: 50px;
+        left: 550px;
+        margin: 0;
+    }
+
+    .header__link2 {
+        position: absolute;
+        margin: 0;
+        top: 38px;
+        left: 620px;
+    }
+
+
+    .header__logo {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+
+    .header__zagolovok {
+        font-size: 52px;
+        padding-bottom: 40px;
+        width: 568px;
+    }
+
+    .header__text {
+        font-size: 24px;
+        margin: 0;
+        padding: 0 0 35px 0;
+        width: 100%;
+    }
+
+    .button {
+        margin-left: 272px;
+        width: 225px;
+        height: 30px;
+    }
+
+
+    .boder {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+
+    .section__karman {
+        margin-left: 0;
+        width: 250px;
+    }
+
+    .buttoner {
+        margin-top: 10px;
+        width: 188px;
+        height: 36px;
+    }
+
+    .section__paket1 {
+        top: 78px;
+        left: 130px;
+    }
+
+    .section__paket2 {
+        top: 78px;
+        left: 130px;
+    }
+
+    .section__paket3 {
+        top: 78px;
+        left: 130px;
+    }
+
+    .section__paket4 {
+        top: 78px;
+        left: 130px;
+    }
+
+}
+
+@media all and (min-width: 960px) {
+
+    .container {
+        width: 940px;
+        margin: 0 auto;
+    }
+
+    .page__header {
+        background: url(../img/main_img.png)rgba(0, 0, 0, 0.5);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        position: relative;
+    }
+
+    .header__link1 {
+        position: absolute;
+        top: 50px;
+        left: 1040px;
+        margin: 0;
+    }
+
+    .header__link2 {
+        position: absolute;
+        margin: 0;
+        top: 38px;
+        left: 1110px;
+    }
+
+    .header__logo {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 50px;
+        left: 240px;
+    }
+
+    .header__zagolovok {
+        font-size: 52px;
+        padding: 0 0 35px 0;
+        width: 568px;
+    }
+
+    .button {
+        margin-left: 610px;
+        width: 225px;
+        height: 30px;
+    }
+
+   
+
+    .boder {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    
+
+    .buttoner {
+        margin-top: 10px;
+        margin-left: 635px;
+    }
+
+    .section__karman {
+        margin-left: 0;
+        width: 200px;
+    }
+
+    .section__paket1 {
+        top: 76px;
+        left: 105px;
+    }
+
+    .section__paket2 {
+        top: 76px;
+        left: 105px;
+    }
+
+    .section__paket3 {
+        top: 76px;
+        left: 105px;
+    }
+
+    .section__paket4 {
+        top: 76px;
+        left: 105px;
+    }
 }
