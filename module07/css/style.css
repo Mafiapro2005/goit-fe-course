@@ -13,28 +13,28 @@
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 400;
-    src: url('../shrift/roboto-slab-v8-cyrillic_latin-regular.woff2') format('woff2');
+    src: url('../fonts/roboto-slab-v8-cyrillic_latin-regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Wisdom Script';
     font-style: normal;
     font-weight: 400;
-    src: url('../shrift/Wisdom Script AI.woff2') format('woff2');
+    src: url('../fonts/Wisdom Script AI.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    src: url('../shrift/montserrat-v13-cyrillic_latin-regular.woff2') format('woff2');
+    src: url('../fonts/montserrat-v13-cyrillic_latin-regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    src: url('../shrift/montserrat-v13-cyrillic_latin-700.woff2') format('woff2');
+    src: url('../fonts/montserrat-v13-cyrillic_latin-700.woff2') format('woff2');
 }
 
   .page-nav {
@@ -51,38 +51,39 @@
     color: #fed136;
 }
 
-  .site-nav {
+  .site-navigation {
     list-style: none;
 }
 
-  .nav-item {
+  .navigation-item {
     display: inline-block;
     margin-right: 40px;
     padding: 11px 0 0 0;
 }
 
-  .nav-item:last-child {
+  .navigation-item:last-child {
     margin-right: 0;
 }
 
-  .nav-link {
+  .navigation-link {
     text-decoration: none;
     color: black;
     font-size: 14px;
     text-transform: uppercase;
     font-family: 'Montserrat';
     font-weight: 700;
+    display: block;
 }
 
-  .nav-link:hover,
-  .nav-link:focus {
+  .navigation-link:hover,
+  .navigation-link:focus {
     transition-property: color;
     transition-duration: 200ms;
     transition-timing-function: ease;
     color: #fed136;
 }
 
-.nazvanie {
+.zagolovok {
     font-family: 'Roboto Slab';
     font-size: 40px;
     color: black;
@@ -92,32 +93,34 @@
 }
 
 .texter {
-    font-family: 'Droid';
+    font-family: 'Roboto Slab';
     text-align: center;
     opacity: 0.6;
     color: #777777;
     padding-bottom: 75px;
 }
 
-.service {
-    width: 274px;
-}
-
-.list {
+.karman {
+    list-style: none;
     display: flex;
     justify-content: space-between;
 }
 
-.list-img {
-    margin: 0 auto 28px;
+.karman__item {
+    width: 312px;
+}
+
+.boder-img {
+    margin: 0 auto;
     display: block;
 }
 
-.list-nazvanie {
+.boder-zagolovok {
     font-family: 'Montserrat';
     font-weight: 700;
     text-align: center;
     padding-bottom: 16px;
+    padding-top: 28px;
 }
 
 .text {
@@ -135,7 +138,7 @@
     position: relative;
 }
 
-.connection {
+.biger {
     padding-top: 110px;
     font-size: 40px;
     font-family: 'Montserrat';
@@ -145,8 +148,8 @@
     text-transform: uppercase;
 }
 
-.info {
-    font-family: 'Roboto Slab',sans-serif;
+.prot {
+    font-family: 'Roboto Slab';
     text-align: center;
     color: #777777;
     padding: 23px 0 75px 0;
@@ -164,7 +167,7 @@
     justify-content: center;
 }
 
-.inputer {
+.inputerer {
     display: flex;
     flex-direction: column;
 }
@@ -190,20 +193,12 @@
     text-transform: uppercase;
 }
 
-.input:hover {
-    border: 1px solid red;
-}
-
 .text-area {
     width: 455px;
     height: 200px;
     border: 2px solid #e4e4e4;
     margin-left: 30px;
     border-radius: 6px;
-}
-
-.text-area:hover {
-    border: 1px solid red;
 }
 
 .text-area::placeholder {
@@ -227,4 +222,15 @@
     font-size: 18px;
     text-transform: uppercase;
     color: white;
+}
+
+
+.invalided input:required:invalid,
+.invalided text-area:required:invalid {
+    border: 2px solid red;
+}
+
+.invalided input:required:valid,
+.invalided text-area:required:valid {
+    border: 2px solid green;
 }
