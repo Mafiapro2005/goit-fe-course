@@ -1,4 +1,4 @@
-/*CONVETIONS*/
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700|Roboto:300,900');
 
 
@@ -19,8 +19,6 @@
     align-items: center;
     padding: 38px 0 38px 0;
 }
-
-/*header*/
 
 .logo {
     display: inline-block;
@@ -65,7 +63,6 @@
     color: black;
 }
 
-/*main-img*/
 
 .shop {
     width: 100%;
@@ -98,7 +95,7 @@
     height: 104px;
     width: 104px;
     background-color: #53a08d;
-    background-image: url("../img/background-image/m-left.png");
+    background-image: url("../img/background-image/m-left.png")
     background-repeat: no-repeat;
     background-position: center;
     left: -185px;
@@ -107,14 +104,14 @@
     border-radius: 1px; 
 }
 
-.shop-description::after{
+.shop-description::after {
     content: "";
     display: block;
     position: absolute;
     height: 104px;
     width: 104px;
     background-color: #1abc9c;
-    background-image: url("../img/background-image/m-right.png");
+    background-image: url("../img/background-image/m-right.png")
     background-repeat: no-repeat;
     background-position: center;
     right: -185px;
@@ -131,7 +128,6 @@
     padding: 37px 0 0 0;
 }
 
-/*footer-1*/
 
 .wrapper {
     margin-top:-4px;
@@ -162,8 +158,6 @@
     color: white;
     text-align: center;
 }
-
-/*footer*/
 
 .pre-footer {
     background-color: #e9f0fd;
@@ -289,8 +283,6 @@
     background-color: #1abc9c;
 }
 
-/* stripe */
-
 .stripe {
     height: 88px;
     width: 100%;
@@ -314,4 +306,3 @@
 
 
 
-  
