@@ -1,404 +1,344 @@
-﻿
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400');
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #666666
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 
 * {
     margin: 0;
     padding: 0;
 }
 
-@media all and (min-width: 320px) {
-    .page__header {
-        background: url(../img/background-image/Header=img=mobile.png)rgba(0, 0, 0, 0.5) no-repeat;
-        background-size: cover;
-        height: 542px;
-    }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 
-    .container__for__link {
-        padding: 32px 0 165px 0;
-    }
+}
+
+/* HEADER */
+
+.container {
+    
+    margin: 0 auto;
+}
+
+.page-header {
+    background-image: linear-gradient(rgba(26, 25, 21, 0.2), rgba(26, 25, 21, 0.2)),
+        url(../Images/Vector\ Smart\ Object.png);
+
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ul-navigation a {
+    display: block;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-weight: 700;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    padding: 10px 18px;
+
+}
+
+
+.logo {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.ul-navigation {
+    display: flex;
+    list-style: none;
+
+
+}
+
+.ul-navigation li:not(:last-child) {
+    margin-right: 37px;
+}
+
+.ul-navigation a:focus {
+
+    border: 2px solid rgba(255, 255, 255, 1);
+
+}
+
+/* SECOND-PART */
+
+.title-second {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: -0.02em;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.text-main {
+    font-family: "Roboto Light", sans-serif;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.first-but {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #fff;
+    font-weight: 700;
+    /* text-align: center; */
+    padding: 14px 50px;
+    background-color: #ff4e50;
+    border: none;
+    border-radius: 30px;
+}
+
+/* TEAM */
+.title-team
+ {
+    padding-top: 70px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    line-height: 26.4px;
+    color: #333333;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.name-team {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #333333;
+    font-weight: 700;
+    /* margin-top: 20px; */
+    margin-bottom: 16px;
+}
+
+.team-list {
+    list-style: none;
+    text-align: center;
+
+}
+
+.div-team {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+
+.text-team {
+  
+    font-family: "Roboto Light", sans-serif;
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #666666;
+    font-weight: 300;
+
+}
+
+.other {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #ff4e50;
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid #ff4e50;
+    padding: 12px 70px;
+    border-radius: 30px;
+    text-align: center;
+
+}
+
+.team {
+    padding-bottom: 56px;
+}
+
+.li-team .div-team:first-of-type::after {
+    content: "";
+    background-image: url("../Images/icons/p1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ff4e50;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 4px solid #fff;
+
+}
+
+.li-team:nth-of-type(2) .div-team::after {
+    background-image: url("../Images/icons/p2.png");
+    background-color: #ffa507;
+}
+
+.li-team:nth-of-type(3) .div-team::after {
+    background-image: url("../Images/icons/p3.png");
+    background-color: #1cd7ad;
+}
+
+.li-team:nth-of-type(4) .div-team::after {
+    background-image: url("../Images/icons/p4.png");
+    background-color: #4e73db;
+}
+
+/* MEDIA */
+
+@media (max-width: 767px) {
 
     .container {
-        margin: 0 auto;
+        width: 282px;
+    }
+    .navigation {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 172px;
+        padding-top: 33px;
+    }
+
+    .text-main {
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+
+    .page-header {
+        min-height: 540px;
+    }
+
+    .title-team {
+        margin-bottom: 20px;
+    }
+.title-second {
+    font-size: 30px;
+    letter-spacing: -0.02em;
+    line-height: 36px;
+}
+
+.header {
+    max-width: 285px;
+}
+  
+}
+
+
+
+@media (min-width: 768px) {
+
+    .container {
+        width: 492px;
+       text-align: center;
+    }
+
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+     
+
+    }
+
+    .li-team {
+       width: 236px;
+        margin-bottom: 60px;
+
+    }
+
+    .text-main {
+        font-size: 24px;
+        line-height: 28.8px;
     }
     
 
-    .header__link1 {
-        text-decoration: none;
-        color: white;
-        font-size: 14px;
-        margin-left: 80px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-    }
-
-    .header__link2 {
-        text-decoration: none;
-        color: white;
-        font-size: 14px;
-        padding: 10px 17px 8px 16px;
-        margin-left: 25px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        border: 3px solid white;
-        border-radius: 25px;
-    }
-
-    .colorer {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        text-align: center;
-        color: white;
-        text-transform: uppercase;
-    }
-
-    .header__logo {
-        font-size: 20px;
-        text-decoration: none;
-        display: block;
-        margin: 0 auto 39px;
-    }
-
-    .header__zagolovok {
-        font-size: 30px;
-        padding-bottom: 20px;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .header__text {
-        width: 217px;
-        margin: 0 auto 19px;
-        font-size: 18px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        text-align: center;
-        color: white;
-    }
-
-    .button {
-        width: 280px;
-        height: 30px;
-        background-color: #ff4e50;
-        border: 1px solid #ff4e50;
-        border-radius: 25px;
-        margin: 0 auto;
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        font-size: 14px;
-        color: white;
-        cursor: pointer;
-        display: block;
-        text-decoration: none;
-        text-align: center;
-        padding-top: 10px;
-    }
-
-
-    .main__zagolovok {
-        font-size: 22px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        text-align: center;
-        padding: 69px 0 20px 0;
-    }
-
-
-
-    .section__karman {
-        margin-left: 60px;
-        width: 200px;
-        position: relative;
-    }
-
-    .div__img {
-        margin: 0 auto;
-        display: block;
-        border-radius: 50%;
-    }
-
-    .section__paket1 {
-        width: 35px;
-        height: 35px;
-        background-color: #ff4e50;
-        border: 3px solid white;
-        border-radius: 50%;
-        position: absolute;
-        top: 75px;
-        left: 110px;
-    }
-
-    .section__paket2 {
-        width: 35px;
-        height: 35px;
-        background-color: #ffa507;
-        border: 3px solid white;
-        border-radius: 50%;
-        position: absolute;
-        top: 75px;
-        left: 110px;
-    }
-
-    .section__paket3 {
-        width: 35px;
-        height: 35px;
-        background-color: #1cd7ad;
-        border: 3px solid white;
-        border-radius: 50%;
-        position: absolute;
-        top: 75px;
-        left: 110px;
-    }
-
-    .section__paket4 {
-        width: 35px;
-        height: 35px;
-        background-color: #4e73db;
-        border: 3px solid white;
-        border-radius: 50%;
-        position: absolute;
-        top: 75px;
-        left: 110px;
-    }
-
-
-    .a__img1 {
-        padding: 6px 0 0 8px;
-    }
-
-    .a__img2 {
-        padding: 8px 0 0 11px;
-    }
-
-    .a__img3 {
-        padding: 7px 0 0 8px;
-    }
-
-    .a__img4 {
-        padding: 8px 0 0 8px;
-    }
-
-
-    .img__h {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        font-size: 14px;
-        text-align: center;
-        padding: 20px 0 15px 0;
-    }
-
-    .h__text {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        font-size: 14px;
-        text-align: center;
-        color: gray;
-        padding-bottom: 30px;
-    }
-
-
-    .buttoner {
-        width: 276px;
-        height: 36px;
-        background-color: transparent;
-        border: 2px solid #ff4e50;
-        border-radius: 25px;
-        margin: 0 auto 60px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        font-size: 14px;
-        color: #ff4e50;
-        cursor: pointer;
-        display: block;
-    }
-}
-
-@media all and (min-width: 768px) {
-
-
-    .container {
-        width: 748px;
-    }
-
-    .page__header {
-        background: url(../img/mobile.png)rgba(0, 0, 0, 0.5);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 700px;
-        position: relative;
-    }
-
-
-    .header__link1 {
-        position: absolute;
-        top: 50px;
-        left: 550px;
-        margin: 0;
-    }
-
-    .header__link2 {
-        position: absolute;
-        margin: 0;
-        top: 38px;
-        left: 620px;
-    }
-
-
-    .header__logo {
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        top: 50px;
-        left: 50px;
-    }
-
-    .header__zagolovok {
-        font-size: 52px;
-        padding-bottom: 40px;
-        width: 568px;
-    }
-
-    .header__text {
-        font-size: 24px;
-        margin: 0;
-        padding: 0 0 35px 0;
-        width: 100%;
-    }
-
-    .button {
-        margin-left: 272px;
-        width: 225px;
-        height: 30px;
-    }
-
-
-    .boder {
+    .navigation {
+        margin-bottom: 161px;
         display: flex;
-        justify-content: space-around;
         flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 46px;
+        align-items: baseline;
+    }
+
+    .page-header {
+        min-height: 700px;
+    }
+    .title-team {
+        margin-bottom: 35px;
     }
 
 
-    .section__karman {
-        margin-left: 0;
-        width: 250px;
+    
+    .title-second {
+        
+        font-size: 52px;
+        line-height: 62.4px;
     }
 
-    .buttoner {
-        margin-top: 10px;
-        width: 188px;
-        height: 36px;
-    }
-
-    .section__paket1 {
-        top: 78px;
-        left: 130px;
-    }
-
-    .section__paket2 {
-        top: 78px;
-        left: 130px;
-    }
-
-    .section__paket3 {
-        top: 78px;
-        left: 130px;
-    }
-
-    .section__paket4 {
-        top: 78px;
-        left: 130px;
-    }
-
+   
 }
 
-@media all and (min-width: 960px) {
+
+@media (min-width: 1440px) {
 
     .container {
         width: 940px;
-        margin: 0 auto;
+       text-align: center;
+    }
+    .li-team {
+        width: 220px;
     }
 
-    .page__header {
-        background: url(../img/main_img.png)rgba(0, 0, 0, 0.5);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 700px;
-        position: relative;
-    }
+    .team-list {
+        display: flex;
+        justify-content: space-between;
+     margin-bottom: 40px;
 
-    .header__link1 {
-        position: absolute;
-        top: 50px;
-        left: 1040px;
-        margin: 0;
-    }
-
-    .header__link2 {
-        position: absolute;
-        margin: 0;
-        top: 38px;
-        left: 1110px;
-    }
-
-    .header__logo {
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        top: 50px;
-        left: 240px;
-    }
-
-    .header__zagolovok {
-        font-size: 52px;
-        padding: 0 0 35px 0;
-        width: 568px;
-    }
-
-    .button {
-        margin-left: 610px;
-        width: 225px;
-        height: 30px;
     }
 
    
 
-    .boder {
-        display: flex;
-        justify-content: space-around;
-    }
-
-
-    
-
-    .buttoner {
-        margin-top: 10px;
-        margin-left: 635px;
-    }
-
-    .section__karman {
-        margin-left: 0;
-        width: 200px;
-    }
-
-    .section__paket1 {
-        top: 76px;
-        left: 105px;
-    }
-
-    .section__paket2 {
-        top: 76px;
-        left: 105px;
-    }
-
-    .section__paket3 {
-        top: 76px;
-        left: 105px;
-    }
-
-    .section__paket4 {
-        top: 76px;
-        left: 105px;
-    }
+    .li-team {
+        width: 220px;
+    margin: 0;
+ 
+     }
 }
