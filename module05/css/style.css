@@ -1,4 +1,3 @@
-/*CONVETIONS*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700|Roboto:300,900');
 
 
@@ -19,8 +18,6 @@
     align-items: center;
     padding: 38px 0 38px 0;
 }
-
-/*header*/
 
 .logo {
     display: inline-block;
@@ -64,8 +61,6 @@
     text-decoration: none;
     color: black;
 }
-
-/*main-img*/
 
 .shop {
     width: 100%;
@@ -131,8 +126,6 @@
     padding: 37px 0 0 0;
 }
 
-/*footer-1*/
-
 .wrapper {
     margin-top:-4px;
     font-size: 0;
@@ -162,8 +155,6 @@
     color: white;
     text-align: center;
 }
-
-/*footer*/
 
 .pre-footer {
     background-color: #e9f0fd;
@@ -289,8 +280,6 @@
     background-color: #1abc9c;
 }
 
-/* stripe */
-
 .stripe {
     height: 88px;
     width: 100%;
@@ -312,10 +301,12 @@
 }
 
 
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
 
-
-  
-
-
-
-
+.container-footer {
+    justify-content: center;
+}
